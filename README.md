@@ -1,7 +1,7 @@
 Composite Numerical Integration
 ===============================
 
-(c) M. Alamgir Hossain. Using this program I solved composite numerical integration. Which already done in our following paper using Mathematica code: 
+(c) M. Alamgir Hossain. Using this code, I solved composite numerical integration. Which already done in our following paper using Mathematica code: 
 
 Md. Shafiqul Islam and M. Alamgir Hossain (2009)- Numerical Integrations over an Arbitrary Quadrilateral Region, Applied Mathematics and Computations Volume 210, Issue 2, 15 April 2009, Pages 515-524.
 
