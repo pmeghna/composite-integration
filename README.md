@@ -9,7 +9,7 @@ Md. Shafiqul Islam and M. Alamgir Hossain (2009)- Numerical Integrations over an
 
 Run
 ====
-Example 2 of Islam and Hossain (2009) can run in a linux macine with the following instructions: 
+Example 2 of Islam and Hossain (2009) can run in a linux machine with the following instructions: 
 
 $ g++ composite.cpp
 
