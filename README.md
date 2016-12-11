@@ -9,7 +9,7 @@ Md. Shafiqul Islam and M. Alamgir Hossain (2009)- Numerical Integrations over an
 ## Run
 Example 2 of Islam and Hossain (2009) can run in a linux machine with the following instructions: 
 
-$ g++ composite.cpp
+$ g++ composite.cpp<br>
 $ ./a.out
 
 Enter the order of Gauss Legendre Quadrature rule: 3
@@ -28,7 +28,7 @@ Enter the order of Gauss Legendre Quadrature rule: 3
 
 Enter the value of n (between 1 and 50) then discretise T into 4xn^2 triangle:10
 
-|4 x n^2 |		Result           |
+|$4xn^2$ |		Result           |
 |:-------|:--------------------|
 |4 x 1^2 |  14.991195582852475 |
 |4 x 2^2 |  19.267674833364271 |
