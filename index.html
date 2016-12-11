@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Composite Numerical Integrations by alamgirh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Composite Numerical Integrations</h1>
+        <p class="header">over an arbitrary quadrilateral region</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/alamgirh/composite-integration/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/alamgirh/composite-integration/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/alamgirh/composite-integration">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/alamgirh">alamgirh</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="composite-numerical-integration-cni" class="anchor" href="#composite-numerical-integration-cni" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Composite Numerical Integration (CNI)</h1>
+
+<p>Newton-Cotes formulas are not accurate for a large integral domain. The main idea of the CNI is to divide integral domain into subdomains and use simple integration rule for each subdomain. </p>
+
+<p>Using the C++ code (composite.cpp), I computed composite numerical integration over a quadrilateral region. We described the composite numerical integration over an arbitrary quadrilateral region in our following paper: </p>
+
+<p>Md. Shafiqul Islam and M. Alamgir Hossain (2009)- Numerical Integrations over an Arbitrary Quadrilateral Region, Applied Mathematics and Computations Volume 210, Issue 2, 15 April 2009, Pages 515-524.</p>
+
+<h2>
+<a id="run" class="anchor" href="#run" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run</h2>
+
+<p>Example 2 of Islam and Hossain (2009) can run in a linux machine with the following instructions: </p>
+
+<p>$ g++ composite.cpp
+$ ./a.out</p>
+
+<p>Enter the order of Gauss Legendre Quadrature rule: 3</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">C_k</th>
+<th align="left">X_k</th>
+<th align="left">Y_k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0.154320987654321</td>
+<td align="left">-0.874596669241483</td>
+<td align="left">0.674596669241483</td>
+</tr>
+<tr>
+<td align="left">0.151284361822039</td>
+<td align="left">-0.443649167310371</td>
+<td align="left">0.330947501931112</td>
+</tr>
+<tr>
+<td align="left">0.034784464623228</td>
+<td align="left">-0.012701665379258</td>
+<td align="left">-0.012701665379258</td>
+</tr>
+<tr>
+<td align="left">0.342542798671788</td>
+<td align="left">-0.830947501931112</td>
+<td align="left">-0.056350832689629</td>
+</tr>
+<tr>
+<td align="left">0.395061728395062</td>
+<td align="left">-0.250000000000000</td>
+<td align="left">-0.250000000000000</td>
+</tr>
+<tr>
+<td align="left">0.151284361822039</td>
+<td align="left">0.330947501931112</td>
+<td align="left">-0.443649167310371</td>
+</tr>
+<tr>
+<td align="left">0.273857510685414</td>
+<td align="left">-0.787298334620741</td>
+<td align="left">-0.787298334620741</td>
+</tr>
+<tr>
+<td align="left">0.342542798671788</td>
+<td align="left">-0.056350832689629</td>
+<td align="left">-0.830947501931112</td>
+</tr>
+<tr>
+<td align="left">0.154320987654321</td>
+<td align="left">0.674596669241483</td>
+<td align="left">-0.874596669241483</td>
+</tr>
+</tbody>
+</table>
+
+<p>Enter the value of n (between 1 and 50) then discretise T into 4xn^2 triangle:10</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">4 x n^2</th>
+<th align="left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">4 x 1^2</td>
+<td align="left">14.991195582852475</td>
+</tr>
+<tr>
+<td align="left">4 x 2^2</td>
+<td align="left">19.267674833364271</td>
+</tr>
+<tr>
+<td align="left">4 x 3^2</td>
+<td align="left">20.238201270672942</td>
+</tr>
+<tr>
+<td align="left">4 x 4^2</td>
+<td align="left">20.562029516588154</td>
+</tr>
+<tr>
+<td align="left">4 x 5^2</td>
+<td align="left">20.693999549518534</td>
+</tr>
+<tr>
+<td align="left">4 x 6^2</td>
+<td align="left">20.755006700820118</td>
+</tr>
+<tr>
+<td align="left">4 x 7^2</td>
+<td align="left">20.785863805737211</td>
+</tr>
+<tr>
+<td align="left">4 x 8^2</td>
+<td align="left">20.802577184929046</td>
+</tr>
+<tr>
+<td align="left">4 x 9^2</td>
+<td align="left">20.812134862867111</td>
+</tr>
+<tr>
+<td align="left">4 x 10^2</td>
+<td align="left">20.817848407116379</td>
+</tr>
+</tbody>
+</table>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
