@@ -1,0 +1,8 @@
+title: Composite Numerical Integration
+description: over an arbitrary quadrilateral region
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
